@@ -37,7 +37,7 @@ export default function AboutPage() {
       </div>
       <div class="col-md-6">
         <div class="h-100 p-5">
-        <img src="/4.jpg" className="image"/>
+        <img src="https://carminamiron04.github.io/final-project/4.jpg" className="image"/>
         </div>
       </div>
       </div>

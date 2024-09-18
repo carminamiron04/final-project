@@ -13,7 +13,7 @@ const TopbarContainer = () => {
   return (
     <header className="topbar">
       <div className="topbar-content bg-color">
-        <img src="/C.png" alt="Logo" className="logo"/>
+        <img src="https://carminamiron04.github.io/final-project/C.png" alt="Logo" className="logo"/>
         <nav className={`topbar-nav ${isMenuOpen ? 'open' : ''}`}>
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/aboutInfo" className="nav-link">About</Link>

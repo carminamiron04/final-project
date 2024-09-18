@@ -8,13 +8,13 @@ export default function FrontContainer() {
       <div className="row">
         <div className="col-sm-6 mb-2 mb-sm-0">
           <div className="card">
-          <img src="/3.jpg"/>
+          <img src="https://carminamiron04.github.io/final-project/3.jpg"/>
           </div>
           <h5 className="text-muted fw-normal p-2">Find your favorites receipes here.</h5>
         </div>
         <div className="col-sm-6">
           <div className="card">
-            <img src="/2.jpg"/>
+            <img src="https://carminamiron04.github.io/final-project/2.jpg"/>
           </div>
         </div>
       </div>
