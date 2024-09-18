@@ -1,38 +1,270 @@
-.App {
+.layout {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* TopBar */
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.topbar {
+  background-color:rgb(241, 234, 227);
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 15px;
+  align-self: center;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: rgb(211, 199, 186);
+}
+
+.menu-toggle {
+  display: none;
+  align-self: center;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .topbar-nav {
+    display: none;
+    flex-direction: column;
+    position:initial;
+    top: 60px; /* Adjust as needed */
+    right: 20px;
+    background-color: rgb(241, 234, 227);
+    width: 200px;
+  }
+
+  .topbar-nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+
+  }
+
+  .nav-link {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.bgcolor {
+  background-color:  rgb(248, 249, 250);
+}
+
+/* Meals container */
+
+.card {
+background-color: transparent;
+}
+
+.containermeals {
+  background-color: rgb(248, 249, 250);
+}
+
+.containerVideo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* FootBar */
+
+footer {
+  display: block;
+  position: sticky;
+  background-color: rgb(241, 234, 227);
+  color: black;
+  padding: 10px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footbar-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.footbar-nav {
+  margin-top: 10px;
+}
+
+.footbar-link {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footbar-link:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+  gap: 50px;
+}
+
+/* Meal page */
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+  }
+
+  .instructionsdiv {
+    width: fit-content !important;
+  }
+
+  .containerVideo {
+    flex-direction: column;
+  }
+  .video {
+    width: fit-content !important;
+  }
+
+  iframe {
+    height: 250px;
+    width: 100%;
   }
 }
+.container1 {
+  display:flex;
+  justify-content: space-evenly;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  height: fit-content;
+  align-self: center;
+}
+
+.instructions {
+  display: flex;
+  align-items: center;
+}
+
+.ingredients {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+ul {
+  text-decoration: none;
+}
+
+iframe {
+  height: 515px;
+  width: 100%;
+}
+
+.video {
+  width: 50%;
+}
+
+.instructionsdiv {
+  width: 50%;
+}
+
+/* Favorites Page */
+
+/*.containerfavorites {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}*/
+
+@media (max-width: 875px) {
+  .containerfavorites {
+    flex-direction: column;
+  }
+}
+
+/* About page*/
+
+.image {
+  width: 100%;
+  width: 100%;
+}
+
+.bgcolor1 {
+  background-color:  rgb(241, 234, 227);
+}
+
+/* Contact page */
+.contact-page {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button1 {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  color: red;
+  font-size: 0.9rem;
 }
